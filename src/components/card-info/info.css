@@ -1,0 +1,34 @@
+.card-info {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 20px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(5, 5, 5, 0.7);
+	opacity: 0;
+	transition: 0.5s;
+	color: white;
+}
+.card-info__data h3 {
+	border-bottom: 1px solid white;
+	padding-bottom: 10px;
+}
+.card-info__data p {
+	padding: 10px 0px;
+}
+.card-info__vote {
+	position: absolute;
+	bottom: 45px;
+	color: white;
+}
+.card-info__vote--like, .card-info__vote--dislike {
+	float: left;
+	margin-right: 10px;
+}
+.card-info__vote button {
+	background: none;
+	border: 0;
+	font-size: 20px;
+	outline: 0px;
+}

@@ -1,0 +1,35 @@
+header {
+	background-color: gray;
+	height: 100px;
+}
+.header-container {
+	display: flex;
+	height: 100%;
+	padding: 0px 50px;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+.logo h1 {
+	margin: 0px;
+	color: red;
+	font-weight: bold;
+}
+.filtro ul {
+	margin: 0px;
+	padding: 0px;
+}
+.filtro ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0px 30px;
+}
+.filtro a {
+	font-size: 18px;
+	color: white;
+	transition: 0.5s;
+}
+.filtro a:hover {
+	text-decoration: none;
+	color: red;
+}
