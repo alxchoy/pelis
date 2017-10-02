@@ -10,10 +10,14 @@ header {
 	flex-direction: row;
 	align-items: center;
 }
-.logo h1 {
+.logo a {
 	margin: 0px;
 	color: red;
 	font-weight: bold;
+	font-size: 40px;
+}
+.logo a:hover, .logo a:focus {
+	text-decoration: none;
 }
 .filtro ul {
 	margin: 0px;
@@ -32,4 +36,8 @@ header {
 .filtro a:hover {
 	text-decoration: none;
 	color: red;
+}
+.filtro a:focus {
+	outline: 0;
+	text-decoration: none;
 }

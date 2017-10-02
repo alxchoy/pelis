@@ -3,3 +3,12 @@ body {
   margin: 0px;
   background-color: black;
 }
+.header-top {
+	display: flex;
+	justify-content: center;
+	margin: 60px 0px 100px;
+	text-align: center;
+}
+.header-top h1 {
+	color: red;
+}

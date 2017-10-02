@@ -7,7 +7,7 @@ class Header extends React.Component {
 		return (
 			<header>
 				<div className="header-container">
-					<div className="logo"><Link to="/"><h1>ChoyFlix</h1></Link></div>
+					<div className="logo"><Link to="/">FullPelis</Link></div>
 					<div className="filtro">
 						<ul>
 							<li><Link to="/mas-votados">Más votados</Link></li>

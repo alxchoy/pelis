@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './shared/header/Header.js';
+import Header from './header/Header.js';
 
 class Template extends React.Component {
 	render() {

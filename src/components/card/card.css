@@ -3,7 +3,7 @@
 	height: 400px;
 	background: red;
 	position: relative;
-	margin: 10px 30px;
+	margin: 20px 30px;
 }
 .card:hover > .card-info {
 	opacity: 1;

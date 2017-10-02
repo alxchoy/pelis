@@ -1,5 +1,8 @@
 import React from 'react';
-import Catalog from './catalog/Catalog.js';
+
+import MasVotados from './mas-votados/MasVotados.js';
+import MenosVotados from './menos-votados/MenosVotados.js';
+import Library from './library/Library.js';
 
 import config from '../firebase.config.js';
 import * as firebase from 'firebase';
@@ -12,38 +15,38 @@ class App extends React.Component {
 		this.state = {
 			catalog: []
 		}
+		this.listData = [];
+		this.handleListData = this.handleListData.bind(this);
 	}
 
 	componentDidMount() {
 		const dataRef = firebase.database().ref('movies/');
-		let list = [];
-		
+		dataRef.on('value', (snapshot) => {
+			this.setState({catalog: snapshot.val()})
+		});
+	}
+
+	handleListData() {
 		switch (this.props.orderBy) {
-			case 'likes':
-				dataRef.on('value', (snapshot) => {
-					list = snapshot.val().sort( (a, b) => b.like - a.like);
-					console.log(list);
-					this.setState({catalog: list});
-				});
+			case "likes":
+				this.listData = <MasVotados list={this.state.catalog} />
 				break;
 
-			case 'dislikes':
-				dataRef.on('value', (snapshot) => {
-					list = snapshot.val().sort( (a, b) => b.dislike - a.dislike);
-					this.setState({catalog: list});
-				});
+			case "dislikes":
+				this.listData = <MenosVotados list={this.state.catalog} />
 				break;
 
 			default:
-				dataRef.on('value', (snapshot) => {
-					this.setState({catalog: snapshot.val()});
-				});
+				this.listData = <Library list={this.state.catalog} showSearch={true}/>
 		}
 	}
 
 	render() {
+		this.handleListData();
 		return (
-			<Catalog items={this.state.catalog} />
+			<div>
+				{this.listData}
+			</div>
 		)
 	}
 }

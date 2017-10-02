@@ -38,3 +38,13 @@
 .catalog-search__wrapper input:focus + .border-focus {
 	width: 100%;
 }
+.find-null {
+	margin-top: 60px;
+	font-size: 40px;
+	color: gray;
+	text-align: center;
+}
+.find-null i {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
