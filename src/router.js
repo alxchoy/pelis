@@ -8,9 +8,9 @@ const AppRoutes = () => (
 	<Router>
 		<Template>
 			<Switch>
-				<Route exact path='/' render={ (props) => ( <App {...props} orderBy="default"/> ) } />
-				<Route exact path="/mas-votados" render={ (props) => ( <App {...props} orderBy="likes"/> ) } />
-				<Route exact path="/menos-votados" render={ (props) => ( <App {...props} orderBy="dislikes"/> ) } />
+				<Route exact path='/pelis/' render={ (props) => ( <App {...props} orderBy="default"/> ) } />
+				<Route exact path="/pelis/mas-votados" render={ (props) => ( <App {...props} orderBy="likes"/> ) } />
+				<Route exact path="/pelis/menos-votados" render={ (props) => ( <App {...props} orderBy="dislikes"/> ) } />
 			</Switch>
 		</Template>
 	</Router>

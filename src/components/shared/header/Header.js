@@ -10,8 +10,8 @@ class Header extends React.Component {
 					<div className="logo"><Link to="/">FullPelis</Link></div>
 					<div className="filtro">
 						<ul>
-							<li><Link to="/mas-votados">Más votados</Link></li>
-							<li><Link to="/menos-votados">Menos votado</Link></li>
+							<li><Link to="/pelis/mas-votados">Más votados</Link></li>
+							<li><Link to="/pelis/menos-votados">Menos votado</Link></li>
 						</ul>
 					</div>
 				</div>
