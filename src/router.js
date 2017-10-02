@@ -8,7 +8,7 @@ const AppRoutes = () => (
 	<Router>
 		<Template>
 			<Switch>
-				<Route exact path='/pelis/' render={ (props) => ( <App {...props} orderBy="default"/> ) } />
+				<Route exact path="/pelis/" render={ (props) => ( <App {...props} orderBy="default"/> ) } />
 				<Route exact path="/pelis/mas-votados" render={ (props) => ( <App {...props} orderBy="likes"/> ) } />
 				<Route exact path="/pelis/menos-votados" render={ (props) => ( <App {...props} orderBy="dislikes"/> ) } />
 			</Switch>
