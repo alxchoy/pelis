@@ -20,7 +20,7 @@ Este proyecto emplea conceptos tales como:
 Para poder ver el proyecto hay 2 opciones:
 
 1. Clonar el repo > ejecutar `npm install` para instalar las dependecias > ejecutar `npm start` para verlo en localhost:3000
-2. Ingresar a la siguiente link [Pelis](https://google.com)
+2. Ingresar a la siguiente link [FullPelis](https://alxchoy.github.io/pelis/)
 
 ### Descripción
 
@@ -35,6 +35,10 @@ Si desean crear una propia instancia de Firebase para pruebas propias deberán h
 1. Crear un archivo firebase.config.js
 2. Copiar en ese archivo su propia configuración de firebase, la cual encuentra en su consola de firebase.
 3. Crear sus propios items con las siguientes propiedades: id, title, description, img, like, dislike.
+
+![Firebase config](https://github.com/alxchoy/pelis/blob/master/public/img/firebase.jpg)
+
+4. Modificar el archivo router.js a su conveniencia.
 
 Este proyecto se creó con [create-react-app](https://github.com/facebookincubator/create-react-app)
 
